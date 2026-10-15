@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.ggufcheck-bak
+dist/
+build/
+*.egg-info/
+.pytest_cache/

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ggufcheck"
+version = "0.1.0"
+description = "Will this GGUF fit, and at how much context? Reads the file header and your machine; prints the verdict and llama-server flags. Stdlib-only, no network."
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+ggufcheck = "ggufcheck:main"
+
+[tool.setuptools]
+py-modules = ["ggufcheck"]
